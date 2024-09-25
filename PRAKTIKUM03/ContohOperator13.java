@@ -6,7 +6,7 @@ public class ContohOperator13 {
         System.out.println("Nilai x++ adalah " + x++);
         System.out.println("Setelah operasi, nilai x adalah " + x);
         
-        int y = 7;
+        int y = 7;  
         System.out.println("Nilai y++ adalah " + ++y);
         System.out.println("Setelah operasi, nilai y adalah " + y);
 
