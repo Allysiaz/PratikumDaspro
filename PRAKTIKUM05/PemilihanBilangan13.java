@@ -12,6 +12,8 @@ public class PemilihanBilangan13 {
         hasil = (angka % 2 == 0) ? " genap" : " ganjil";
         System.out.println("Bilangan " + angka + " termasuk bilangan" + hasil);
 
+        
+
         }
 
     }
