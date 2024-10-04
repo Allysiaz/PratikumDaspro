@@ -5,22 +5,20 @@ public class Pemilihan2Percobaan213 {
        
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Masukkan pilihan menu: ");
-        int menu = sc.nextInt();
+       
 
-        System.out.println("Member: ");
-        String member = sc.nextLine();
-
-        int pilihan_menu;
-
-        System.out.println("-------------------------------");
-        System.out.println("======== MENU KAFE JTI ========");
-        System.out.println("-------------------------------");
+        System.out.println("----------------------------------------");
+        System.out.println("============ MENU KAFE JTI =============");
+        System.out.println("----------------------------------------");
         System.out.println("1.  Ricebowl");
         System.out.println("2. Ice Tea");
         System.out.println("3. Paket Bunding (Ricebowl + Ice Tea)");
         System.out.println("----------------------------------------");
         System.out.println("masukkan angka dari menu yang dipilih = ");
+
+        int pilihan_menu;
+        String member;
+
         pilihan_menu = sc.nextInt();
         sc.nextLine();
         System.out.println("Apakah punya member (y/n) ? = ");
@@ -34,7 +32,7 @@ public class Pemilihan2Percobaan213 {
             diskon = 0.10;
             System.out.println("Besar diskon = 10%");
             if (pilihan_menu == 1) {
-                harga = 1400;
+                harga = 14000;
                 System.out.println("Harga Ricebowl = " + harga);
     
             } else if (pilihan_menu == 2) {
@@ -75,7 +73,7 @@ public class Pemilihan2Percobaan213 {
             System.out.println("Member tidak Valid!");
         }
 
-        System.out.println("------------------------------------------------");
+        System.out.println("----------------------------------------");
         
 
     
