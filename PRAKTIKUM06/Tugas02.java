@@ -17,10 +17,35 @@ public class Tugas02 {
         System.out.println("Masukkan banyak buku: ");
         banyakBuku = sc.nextInt();
 
-        if (hari.equalsIgnoreCase("rabu")) {
-            diskon = 0.10;
+        diskon = 0;
 
+        if (hari.equalsIgnoreCase("rabu")) {
+           if (jenisBuku.equalsIgnoreCase("kamus")) {
+             diskon = 10;
+             if (banyakBuku > 2) {
+                diskon += 2;
+             } else {
+                diskon = 10;
+             }
+           } else if (jenisBuku.equalsIgnoreCase("novel")) {
+            diskon = 7;
+            if (banyakBuku > 3) {
+                diskon += 2;
+            } else if (banyakBuku <= 3) {
+                diskon += 1;
+            }
+           } else {
+            if (banyakBuku > 3) {
+                diskon = 5;
+            } else {
+                System.out.println("Anda tidak mendapat diskon:");
+            }
+           }
+
+        } else {
+            System.out.println("Anda tidak mendapat diskon");
         }
+        System.out.println("Total diskon anda: " + diskon + " %");
 
     }
 }

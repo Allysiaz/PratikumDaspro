@@ -17,16 +17,20 @@ public class Pemilihan2Percobaan213 {
         System.out.println("masukkan angka dari menu yang dipilih = ");
 
         int pilihan_menu;
-        String member;
+        String member, qris;
 
         pilihan_menu = sc.nextInt();
         sc.nextLine();
         System.out.println("Apakah punya member (y/n) ? = ");
         member = sc.nextLine();
+        System.out.println("Apakah menggunakan qris (y/n)? = ");
+        qris = sc.nextLine();
         System.out.println("----------------------------------------");
+
 
         int harga;
         double diskon, totalBayar;
+        totalBayar = 0;
 
         if (member.equalsIgnoreCase("y")) {
             diskon = 0.10;
@@ -68,12 +72,25 @@ public class Pemilihan2Percobaan213 {
                 System.out.println("Masukkan pilihan menu dengan benar!");
                 return;
             }
+            
+            if (qris.equalsIgnoreCase("y")) {
+                harga -= 1000;
+            }
+
+            totalBayar = harga - (0);
+        
+        
 
         } else {
             System.out.println("Member tidak Valid!");
         }
 
         System.out.println("----------------------------------------");
+
+       
+
+        System.out.println("Total Pembayaran = " + totalBayar);
+
         
 
     
