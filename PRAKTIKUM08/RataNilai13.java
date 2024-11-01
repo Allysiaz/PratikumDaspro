@@ -13,7 +13,7 @@ public class RataNilai13 {
             System.out.println("Input Nilai Mahasiswa ke " + i);
             totalNilai = 0;
             for (j=1; j<=5; j++) {
-                System.out.print("Nilai ke-" +j + " = ");
+                System.out.print("Nilai ke-" + j + " = ");
                 nilaiMhs = sc.nextInt();
                 totalNilai += nilaiMhs;
             }
