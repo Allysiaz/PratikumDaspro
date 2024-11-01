@@ -18,8 +18,9 @@ public class PemilihanHariDenganIf13 {
         }
         else{
             System.out.println("Invalid number");
-        }   
+        }  
+        
+        
+        sc.close();
     }
-
-
 }

@@ -28,5 +28,8 @@ public class Tugas01 {
                 } else {
                     System.out.println("Bilangan terbesar adalah " + bil3);
                 }
+
+
+                sc.close();            
     }
 }

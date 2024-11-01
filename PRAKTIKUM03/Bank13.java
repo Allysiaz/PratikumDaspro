@@ -21,5 +21,6 @@ import java.util.Scanner;public class Bank13 {
         System.out.println("Bunga: " + bunga);
         System.out.println("Tabungan Akhir: " + tabunganAkhir);
 
+    sc.close();
     }
 }

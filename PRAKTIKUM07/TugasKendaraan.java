@@ -28,5 +28,8 @@ public class TugasKendaraan {
 
         System.out.println("Total Bayar: " + total);
 
+
+
+        sc.close();
     }
 }

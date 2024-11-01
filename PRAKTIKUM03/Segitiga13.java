@@ -17,6 +17,6 @@ public class Segitiga13 {
 
         System.out.println("Luas segitiga: " + luas);
 
-
+        sc.close();
      }
 }

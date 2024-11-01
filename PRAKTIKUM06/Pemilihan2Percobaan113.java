@@ -22,5 +22,8 @@ public class Pemilihan2Percobaan113 {
                 }
             }
         }
+
+        
+        sc.close();
     }
 }

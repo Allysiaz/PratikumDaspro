@@ -21,6 +21,9 @@ public class Parkir13 {
             case "mobil":
                 biayaParkir = 5000;
                 break;
+            default:
+            biayaParkir = 0;
+            break;
         }
 
         double totalHarga = biayaParkir * lamaParkir;
@@ -28,5 +31,6 @@ public class Parkir13 {
         System.out.println("Jenis kendaraan anda adalah: " + jenisKendaraan);
         System.out.println("Total biaya parkir yang dibayar: " + totalHarga);
 
+        sc.close();
     }
 }

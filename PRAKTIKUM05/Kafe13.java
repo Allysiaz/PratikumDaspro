@@ -54,6 +54,7 @@ public class Kafe13 {
         System.out.println("Item pembelian: " + jumlah + " " + menu + " dengan ukuran cup " + ukuranCup);
         System.out.println("Nominal bayar: " + nominalBayar);
         
+        sc.close();
     }
 
 }

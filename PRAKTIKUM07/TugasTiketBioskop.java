@@ -37,6 +37,9 @@ public class TugasTiketBioskop {
         System.out.println("Total Tiket terjual adalah: " + totalTiket);
         System.out.println("Total penjualan tiket adalah:  " + totalHarga);
 
+
+
+        sc.close();
     }
     
 }

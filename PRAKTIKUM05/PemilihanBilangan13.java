@@ -13,7 +13,7 @@ public class PemilihanBilangan13 {
         System.out.println("Bilangan " + angka + " termasuk bilangan" + hasil);
 
         
-
+        sc.close();
         }
 
     }

@@ -47,5 +47,8 @@ public class Tugas02 {
         }
         System.out.println("Total diskon anda: " + diskon + " %");
 
+
+
+        sc.close();
     }
 }

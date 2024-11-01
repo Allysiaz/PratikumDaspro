@@ -39,5 +39,6 @@ public class Pemilihan2Percobaan313 {
             System.out.println("Kategori Salah!");
 
 
+            sc.close();
     }
 }

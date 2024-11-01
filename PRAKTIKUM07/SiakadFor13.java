@@ -28,5 +28,6 @@ public class SiakadFor13 {
         System.out.println("Jumlah Mahasiswa Tidak Lulus: " + tidakLulus);
 
 
+        sc.close();
     }
 }

@@ -25,6 +25,6 @@ public class GajiBulananKaryawan {
         double totalGaji = gajiSetelahBonus - pajak;
         System.out.println("Total Gaji anda adalah: " +totalGaji);
 
-
+        sc.close();
     }
 }

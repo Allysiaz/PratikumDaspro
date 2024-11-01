@@ -50,6 +50,7 @@ public class Pemilihan2Percobaan213 {
             } else {
                 System.out.println("Masukkan pilihan menu dengan benar!");
                 return;
+                
             }
 
             totalBayar = harga - (harga * diskon);
@@ -93,7 +94,7 @@ public class Pemilihan2Percobaan213 {
 
         
 
-    
+        
     }
 
 }
