@@ -10,15 +10,13 @@ public class Triangle13 {
 
         while (i <= N) {
             int j = 0;
-            while (j <= N) {
+            while (j < i) {
                 System.out.print("*");
                 j++;
             }
             i++;
             System.out.println();
         }
-
-
         sc.close();
     }
 }
