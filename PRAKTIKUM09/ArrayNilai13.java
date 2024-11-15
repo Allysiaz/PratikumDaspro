@@ -18,5 +18,6 @@ public class ArrayNilai13 {
                 System.out.println("Mahasiswa ke- " + i + " Tidak Lulus!");
             }
         }
+        sc.close();
     }
 }
