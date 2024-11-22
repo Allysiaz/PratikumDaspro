@@ -1,19 +1,40 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ss {
-    
+     Scanner sc = new Scanner(System.in);
 
-    int[][] myNumbers = new int[3][];
-        myNumbers[0] = new int[5];
-        myNumbers[1] = new int[3];
-        myNumbers[2] = new int[1];
+        System.out.print("Masukkan jumlah siswa: ");
+        int jmlSiswa = sc.nextInt();
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jmlMatkul = sc.nextInt();
+        
+        int[][] nilai = new int[jmlSiswa][jmlMatkul];
 
-        for (int i = 0; i < myNumbers.length; i++) {
-            System.out.println(Arrays.toString(myNumbers[i]));
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.println("Input nilai mahasiswa ke-" + (i+1));
+            double totalPerSiswa = 0;
+
+            for (int j = 0; j < nilai[i].length; j++) {
+                System.out.print("Nilai mata kuiah " + (j+1) + ": ");
+                nilai[i][j] = sc.nextInt();
+                totalPerSiswa += nilai[i][j];
+            }
+
+            System.out.println("Nilai rata-rata: " + totalPerSiswa/jmlMatkul);
         }
 
-        for (int i = 0; i < myNumbers.length; i++) {
-            System.out.println("Panjang baris ke-" + (i+1) + ": " + myNumbers[i].length);
-        }
+        System.out.println("====================================");
+        System.out.println("Rata-rata nilai setiap mata kuliah:");
 
+        for (int j = 0; j < jmlMatkul; j++) {
+            double totalPerMatkul = 0;
+
+            for (int i = 0; i < jmlSiswa; i++) {
+                totalPerMatkul += nilai[i][j];
+            }
+
+            System.out.println("Mata kuliah " + (j+1) + ": " + totalPerMatkul/jmlSiswa);
+        }
+    }
 }
